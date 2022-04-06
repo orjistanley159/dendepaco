@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* helper classes */
+
+a{
+    text-decoration: none;
+}
+li{
+   
+    list-style-type: none;
+}
+.container{
+    padding: 30px 90px;
+}
+
+/* hero */
+
+body{
+    background-color:#fff;
+}
+.hero{
+    background: url(../imges/hero_image.jpg) rgba(0, 0, 0, 0.2);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+    /* background-position-y: -850px; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.nav_bar{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+   
+}
+.menu{
+    width: 95%;
+    height: 9vh;
+    background-color: rgba(31, 30, 30, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 1px rgba(236, 236, 236, 0.212);
+    /* border-radius: 7px; */
+    position: fixed;
+   
+}
+.menu_title{
+    content: "";
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.925);
+    height: 10vh;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    color: black;
+    padding: 18.5px 7px;
+}
+ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.281);
+    color: #fff;
+    border-bottom: tomato solid 7px;
+    transition: all 0.5s;
+}
+ul li a:active{
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.header_body{
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+.header_body_caption{
+    font-weight: bolder;
+    font-size: 5em;
+    text-align: center;
+    line-height: 150px;
+}
+
+/* about us */
+#about_us{
+    padding: 30px 90px;
+    height: 100vh;
+    background-color: rgb(230, 225, 225);
+}
+.about_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.about_h1{
+    font-weight: bolder;
+    font-size: 3.5em;
+}
+.about_body_box{
+    display: flex;
+}
+.about_body{
+    width: 100%;
+    height: 80vh;
+    /* border: solid black; */
+}
+.about_body:nth-child(1){
+    width: 60%;
+    background-image: url(../imges/about_us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 2px darkgray;
+}
+
+.about_body:nth-child(2){
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px 25px;
+    width: 80em;
+    background-color: rgba(216, 166, 143, 0.486);
+    box-shadow: 0px 0px 5px 2px darkgray;
+   /* border-radius: 7px; */
+}
+.writeup_about{
+    font-size: 2.5em;
+}
+/* services */
+#services{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgba(174, 151, 196, 0.534); */
+    background: url(../imges/services_pic.jpg) rgba(0, 0, 0, 0.2);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our_services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.our_services_head{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px darkgray;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+.services_card_box{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    /* grid-template-columns: repeat(5, 1fr); */
+}
+.services_card{
+    height: 55vh;
+    width: 100%;
+    text-align:center;
+    border-radius: 20px 0px 20px 0px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 2px black;
+
+}
+.services_card:nth-child(1){
+    background: url(..//imges/service1.jpg) rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.services_card:nth-child(2){
+    background: url(..//imges/livestock1.jpg) rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.services_card:nth-child(3){
+    background: url(..//imges/snad\ dump1.jpg) rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.services_card:nth-child(4){
+    background: url(..//imges/solar-installation.jpg) rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.services_card:nth-child(5){
+    background: url(..//imges/construction-equipment.jpg) rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+
+.services_card:hover{
+    transition: 1s all;
+    height: 60vh;
+    position: relative;
+    top: -5px;
+    border-radius: 0px 0px 20px 20px ;
+    box-shadow: 0px 0px 5px 3px black;
+}
+
+/* Gallery */
+#gallery{
+    height: fit-content;
+    width: 100%;
+    
+}
+.gallery_head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgb(107, 104, 104) solid 2px;
+    border-top: rgb(107, 104, 104) solid 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: bolder;
+}
+.gallery_cards_box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    width: 100%;
+    height: fit-content;
+    clear: both;
+}
+.gallery_cards{
+    /* border: black solid; */
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gallery_cards:nth-child(1){
+    background-image: url(../imges/livestock1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+    
+}
+.gallery_cards:nth-child(2){
+    background-image: url(../imges/livestock2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(3){
+    background-image: url(../imges/livestock3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(4){
+    background-image: url(../imges/livestock4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(5){
+    background-image: url(../imges/livestock5.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(6){
+    background-image: url(../imges/livestock5.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(7){
+    background-image: url(../imges/livestock9.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(8){
+    background-image: url(../imges/livestock7.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(9){
+    background-image: url(../imges/livestock8.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(10){
+    background-image: url(../imges/livestock9.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(11){
+    background-image: url(../imges/livestock10.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(12){
+    background-image: url(../imges/livestock12.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(13){
+    background-image: url(../imges/livestock13.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_cards:nth-child(14){
+    background-image: url(../imges/livestock14.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+.gallery_card_name{
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    visibility: hidden;
+    
+}
+.gallery_cards:hover > .gallery_card_name{
+    visibility: visible;
+   
+}
+.gallery_cards:hover{
+    box-shadow: 0px 0px 7px 3px black;
+    transition: all 1s;
+}
+
+#sand-dump:nth-child(1){
+    background-image: url(../imges/snad\ dump1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+#sand-dump:nth-child(2){
+    background-image: url(../imges/sand-dump1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+#sand-dump:nth-child(3){
+    background-image: url(../imges/sand-dump2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+}
+
+/* team */
+#team{
+    height: 80vh;
+    width: 100%;
+    background-image: url(../imges/team.jpg);
+    background-repeat: no-repeat;
+    /* margin-top: 7em; */
+}
+
+/* contact */
+#contact{
+    height: 80vh;
+    width: 100%;
+    background-image: url(../imges/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+}
+.contact_body{
+    width: 40%;
+    height: 70vh;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.205);
+    line-height: 3em;
+
+}
+#footer{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
